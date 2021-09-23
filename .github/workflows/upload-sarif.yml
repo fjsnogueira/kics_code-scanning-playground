@@ -18,7 +18,7 @@ jobs:
       run: mkdir -p results-dir
       
     - name: Run KICS Scan with SARIF result
-      uses: fjsnogueira/kics-github-action@v1.3
+      uses: fjsnogueira/kics-github-action@v1.4
       with:
         # comma separated list of paths
         path: 'main.yml'

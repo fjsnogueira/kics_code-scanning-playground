@@ -21,7 +21,7 @@ jobs:
       uses: checkmarx/kics-action@v1.2
       with:
         # comma separated list of paths
-        path: 'terraform,my-subdir,my-other-subdir/my-file.tf'
+        path: 'eslint-formatter'
         # when provided with a directory on output_path
         # it will generate the specified reports file named 'results.{extension}'
         # in this example it will generate:
@@ -32,7 +32,7 @@ jobs:
         # Will exit with status code 0 even if results are found
         ignore_on_exit: results
         output_formats: 'json,sarif'
-        exclude_paths: "terraform/gcp/big_data.tf,terraform/azure"
+        # exclude_paths: "terraform/gcp/big_data.tf,terraform/azure"
         # look for the queries' ID in its metadata.json
         exclude_queries: 0437633b-daa6-4bbc-8526-c0d2443b946e
     - name: Show results

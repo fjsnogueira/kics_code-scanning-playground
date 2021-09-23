@@ -27,6 +27,7 @@ jobs:
         # in this example it will generate:
         # - results-dir/results.json
         # - results-dir/results.sarif
+        secrets_regexes_path: secrets.json
         output_path: results-dir
         #platform_type: terraform
         # Will exit with status code 0 even if results are found

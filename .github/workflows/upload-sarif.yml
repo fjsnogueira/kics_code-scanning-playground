@@ -41,12 +41,12 @@ jobs:
         cat results-dir/results.json
 
     # Captures results in the SARIF report as a check run
-    - name: SARIF to Checks
-      uses: ./.github/actions/sarif-to-check-run
-      with:
-        sarif_file: results-dir/results.sarif
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #- name: SARIF to Checks
+    #  uses: ./.github/actions/sarif-to-check-run
+    #  with:
+    #    sarif_file: results-dir/results.sarif
+    #  env:
+    #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Expose report
       uses: actions/upload-artifact@v2

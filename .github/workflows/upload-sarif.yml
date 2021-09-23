@@ -28,7 +28,7 @@ jobs:
         # - results-dir/results.json
         # - results-dir/results.sarif
         output_path: results-dir
-        platform_type: terraform
+        #platform_type: terraform
         # Will exit with status code 0 even if results are found
         ignore_on_exit: results
         output_formats: 'json,sarif'

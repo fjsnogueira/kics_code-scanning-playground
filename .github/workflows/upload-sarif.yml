@@ -21,7 +21,7 @@ jobs:
       uses: checkmarx/kics-action@v1.2
       with:
         # comma separated list of paths
-        path: 'eslint-formatter'
+        path: 'main.yml'
         # when provided with a directory on output_path
         # it will generate the specified reports file named 'results.{extension}'
         # in this example it will generate:

@@ -1,4 +1,4 @@
-# `kics code-scanning-playground`
+# `kics-code-scanning-playground`
 > :wave: :earth_americas: a playground for **Code Scanning** :roller_coaster:
 
 ## Contents
@@ -13,13 +13,13 @@ This is a template repo, demonstrating GitHub's [Code Scanning capability](https
 ![example](images/kics_gh_action.png)
 
 ## How it works
-- The KICS analysis workflow [runs on a schedule, and on every `push`](https://github.com/swinton/code-scanning-playground/blob/20366008d4376dd1899559fba0bf5fbbece109c3/.github/workflows/upload-sarif.yml#L3-L8)
-- The KICS output is [formatted as SARIF](https://github.com/swinton/code-scanning-playground/blob/20366008d4376dd1899559fba0bf5fbbece109c3/.github/workflows/upload-sarif.yml#L18-L20), using the [`@microsoft/eslint-formatter-sarif`](https://github.com/microsoft/sarif-sdk/tree/master/src/ESLint.Formatter#readme) package
+- The KICS analysis workflow [runs on a schedule, and on every `push`](https://github.com/fjsnogueira/kics_code-scanning-playground/blob/20366008d4376dd1899559fba0bf5fbbece109c3/.github/workflows/upload-sarif.yml#L3-L8)
+- The KICS output is [formatted as SARIF](https://github.com/fjsnogueira/kics_code-scanning-playground/blob/20366008d4376dd1899559fba0bf5fbbece109c3/.github/workflows/upload-sarif.yml#L18-L20), using the [`@microsoft/eslint-formatter-sarif`](https://github.com/microsoft/sarif-sdk/tree/master/src/ESLint.Formatter#readme) package
 - The SARIF report is submitted to GitHub via the [`github/codeql-action/upload-sarif`](https://github.com/github/codeql-action/tree/main/upload-sarif) action
 
 ## Getting started
 1. Register for the code scanning beta [here](https://github.com/features/security/advanced-security/signup)
-1. [Generate a copy of this repo](https://github.com/fjsnogueira/code-scanning-playground/generate)
+1. [Generate a copy of this repo](https://github.com/fjsnogueira/kics_code-scanning-playground/generate)
 1. Push a commit -- it can even be an empty commit (`git commit --allow-empty`)
 1. Observe as a new security alert is generated
 

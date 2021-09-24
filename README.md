@@ -14,7 +14,7 @@ This is a template repo, demonstrating GitHub's [Code Scanning capability](https
 
 ## How it works
 - The KICS analysis workflow [runs on a schedule, and on every `push`](https://github.com/fjsnogueira/kics_code-scanning-playground/blob/20366008d4376dd1899559fba0bf5fbbece109c3/.github/workflows/upload-sarif.yml#L3-L8)
-- The KICS output is [formatted as SARIF](https://github.com/fjsnogueira/kics_code-scanning-playground/blob/20366008d4376dd1899559fba0bf5fbbece109c3/.github/workflows/upload-sarif.yml#L18-L20), using the [`@microsoft/eslint-formatter-sarif`](https://github.com/microsoft/sarif-sdk/tree/master/src/ESLint.Formatter#readme) package
+- The KICS output is [formatted as SARIF](https://github.com/fjsnogueira/kics_code-scanning-playground/blob/20366008d4376dd1899559fba0bf5fbbece109c3/.github/workflows/upload-sarif.yml#L18-L20), using the [`@fjsnogueira/kics-github-action`](https://github.com/fjsnogueira/kics-github-action) 
 - The SARIF report is submitted to GitHub via the [`github/codeql-action/upload-sarif`](https://github.com/github/codeql-action/tree/main/upload-sarif) action
 
 ## Getting started

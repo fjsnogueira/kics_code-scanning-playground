@@ -10,7 +10,7 @@
 ## About
 This is a template repo, demonstrating GitHub's [Code Scanning capability](https://docs.github.com/en/github/finding-security-vulnerabilities-and-errors-in-your-code/about-code-scanning), using KICS to generate a "code scanning alert" in GitHub's Security tab:
 
-![example](images/example.png)
+![example](images/kics_gh_action.png)
 
 ## How it works
 - The KICS analysis workflow [runs on a schedule, and on every `push`](https://github.com/swinton/code-scanning-playground/blob/20366008d4376dd1899559fba0bf5fbbece109c3/.github/workflows/upload-sarif.yml#L3-L8)
